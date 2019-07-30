@@ -1,0 +1,36 @@
+<!--components/y-swiper/y-swiper.wxml-->
+
+
+<!-- swiper 组件使用的注意事项
+    1. 默认情况下 swiper 组件是有固定高度的
+    2. swiper 组件内部使用 使用swiper-item 组件, 其它组件全部要放在swiper-item里面
+    3. image组件有默认的尺寸 320 * 240, 因此在使用时, 需要重新定义尺寸, 一般定义为 width:100%
+    4. image 组件在使用时, 为了防止 图片拉伸变形, 一般使用 mode = "widthFix", 意思是 宽度不变高度变化
+
+
+ -->
+
+
+ <swiper  class="siwper" 
+          style="height:{{bannerHeight+'px'}}" 
+          indicator-active-color="#fb3c63"
+          indicator-dots
+          interval="2000"
+          duration="250"
+          autoplay
+          circular 
+          bind:change="swiperDidChange"
+         
+          >
+    <block   wx:for="{{list}}"  wx:key="{{index}}"  >  
+
+        <swiper-item 
+                  class="swiper-item" 
+                  data-index="{{index}}" 
+                  data-item="{{item}}"
+                  bind:tap="swiperItemDidTap"> 
+
+          <image src="{{item.image}}" mode="widthFix" />
+        </swiper-item> 
+    </block>
+ </swiper>

@@ -1,0 +1,27 @@
+/* components/y-recommends/y-recommends.wxss */
+
+/* flex 布局 */
+.recommends{
+  display: flex;
+  margin-top: 40rpx; 
+  /* 给底部增加一个 分割线 */
+  border-bottom: 10px solid #eee;
+  padding-bottom: 40rpx; 
+}
+
+.recommends-item{
+  flex: 1;  
+  text-align: center; /* 让行内 子标签内容居中(即: 显示在中间) */
+  
+}
+
+.recommends-item image{
+  width: 160rpx;
+  height: 160rpx; 
+}
+
+.recommends-item text{ 
+  font-size: 24rpx;
+  color: #555;
+  margin-top: 10rpx;
+}

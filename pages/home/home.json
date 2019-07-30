@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "y-swiper":"/components/y-swiper/y-swiper" ,
+    "y-recommends": "/pages/home/components/y-recommends/y-recommends"
+  },
   "navigationBarTitleText": "首页" ,
   "enablePullDownRefresh": true
 }

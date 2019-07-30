@@ -1,0 +1,9 @@
+/* components/y-swiper/y-swiper.wxss */
+
+
+.siwper{ 
+}
+
+.swiper-item image{
+  width: 100%;
+}

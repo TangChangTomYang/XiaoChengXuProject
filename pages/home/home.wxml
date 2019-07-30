@@ -1,2 +1,19 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+
+<!-- 轮播 banner -->
+<y-swiper list = "{{banners}}" 
+          bannerHeight="{{bannerHeight}}" 
+          bind:swiperItemDidClick="bannerItemDidClick"
+/>
+
+
+<!-- 推荐数据的展示 -->
+<y-recommends list="{{recommends}}" 
+              bind:recommendsDidClick="recommendsDidClick"
+/>
+
+<!-- 本周流行 -->
+<view class="popular_bg">
+  <image  src="/assets/home/popular_bg.jpg" mode="widthFix"></image>
+</view>

@@ -1,0 +1,15 @@
+<!--components/y-recommends/y-recommends.wxml-->
+
+<!-- 推荐数据 -->
+
+<view class="recommends">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+
+    <view class="recommends-item" bind:tap="recommendsDidClick" data-index="{{index}}" data-item="{{item}}">
+      <image src="{{item.image}}"  ></image>
+      <!-- 使用一个 view标签将 text 标签包裹, 作用是让text 和 image 不要在一样, 换到下一行 -->
+      <view><text>{{item.title}}</text></view>
+    </view>
+  </block>
+</view>
+ 
