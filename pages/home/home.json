@@ -1,12 +1,13 @@
 {
   "usingComponents": {
     "y-swiper":"/components/y-swiper/y-swiper" ,
+    "y-tabCtr": "/components/y-tabCtr/y-tabCtr",
 
 
 
     "y-recommends": "./y-recommends/y-recommends",
-    "y-popular": "./y-popular/y-popular" ,
-    "y-tabCtr": "./y-tabCtr/y-tabCtr"
+    "y-popular": "./y-popular/y-popular" 
+    
   },
   "navigationBarTitleText": "首页" ,
   "enablePullDownRefresh": true
