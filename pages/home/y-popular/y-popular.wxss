@@ -1,0 +1,5 @@
+/* pages/home/y-popular/y-popular.wxss */
+
+.popular  image{
+  width: 100%;
+}

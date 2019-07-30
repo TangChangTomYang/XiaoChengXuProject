@@ -1,0 +1,22 @@
+/* pages/home/y-tabCtr/y-tabCtr.wxss */
+
+
+.tab-ctr{
+  display: flex;
+  text-align: center;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+
+}
+
+.tab-ctr-item{
+  flex: 1; 
+}
+
+.tab-ctr-item text{
+  border-bottom: 10rpx solid #fb3c63;
+  font-size: 40rpx; 
+  padding-bottom: 10rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}

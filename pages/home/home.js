@@ -21,7 +21,8 @@ Page({
   data: {
     banners:[],
     recommends:[],
-    bannerHeight:0
+    bannerHeight:0,
+    tabCtrs:['流行', '新款', '精选', '我喜欢']
 
   },
  
@@ -77,6 +78,14 @@ Page({
    */
   recommendsDidClick(e) {
     console.log(e)
+  },
+
+  /**
+   * tabCtrDidClick
+   */
+  tabCtrDidClick(e){
+    console.log(e)
+
   }
 
 })

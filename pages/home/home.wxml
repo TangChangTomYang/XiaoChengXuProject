@@ -14,6 +14,8 @@
 />
 
 <!-- 本周流行 -->
-<view class="popular_bg">
-  <image  src="/assets/home/popular_bg.jpg" mode="widthFix"></image>
-</view>
+<y-popular image="/assets/home/popular_bg.jpg" />
+
+
+<!-- tab-ctr -->
+<y-tabCtr tabCtrs="{{tabCtrs}}" bind:tabCtrDidClick="tabCtrDidClick" />

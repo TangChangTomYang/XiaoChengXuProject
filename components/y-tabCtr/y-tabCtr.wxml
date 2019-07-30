@@ -1,0 +1,10 @@
+<!--pages/home/y-tabCtr/y-tabCtr.wxml-->
+
+
+<view class="tab-ctr">
+  <block wx:for="{{tabCtrs}}" wx:key="{{index}}"> 
+    <view class="tab-ctr-item" bind:tap="tabCtrDidClick" data-index="{{index}}" data-item="{{item}}" > 
+      <text>{{item}}</text> 
+    </view>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/home/y-popular/y-popular.wxml-->
+
+
+<view class="popular">
+  <image  src="{{image}}" mode="widthFix"></image>
+</view>

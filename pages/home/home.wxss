@@ -1,6 +1,2 @@
 /* pages/home/home.wxss */
 
-
-.popular_bg image{
-  width: 100%;
-}
