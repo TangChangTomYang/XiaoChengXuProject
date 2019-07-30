@@ -4,8 +4,10 @@
 .tab-ctr{
   display: flex;
   text-align: center;
+  font-size: 40rpx;
   margin-top: 40rpx;
   margin-bottom: 40rpx;
+  color:#555;
 
 }
 
@@ -13,10 +15,11 @@
   flex: 1; 
 }
 
-.tab-ctr-item text{
-  border-bottom: 10rpx solid #fb3c63;
-  font-size: 40rpx; 
+ 
+.active text{
+  color:#fb3c63;
   padding-bottom: 10rpx;
   padding-left: 15rpx;
   padding-right: 15rpx;
+  border-bottom: 10rpx solid #fb3c63;
 }

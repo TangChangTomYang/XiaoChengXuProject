@@ -18,4 +18,26 @@
 
 
 <!-- tab-ctr -->
-<y-tabCtr tabCtrs="{{tabCtrs}}" bind:tabCtrDidClick="tabCtrDidClick" />
+<y-tabCtr tabCtrs="{{tabCtrs}}" 
+          bind:tabCtrDidClick="tabCtrDidClick"
+          currtentIndex="{{currentTabCtrIndex}}" 
+/>
+
+
+
+
+<!-- 商品 -->
+<view class="goods">
+  <block wx:for="{{currentTabCtrIndex == '0' ? goods.pop.list : currentTabCtrIndex == '1' ? goods.new.list : currentTabCtrIndex == '2' ? goods.sell.list : 0 }}" wx:key="{{index}}"> 
+
+    <!-- 使用商品 组件创建 商品 -->
+    <y-goods-item  
+        class="goods-item"
+        item="{{item}}" 
+        data-index="{{index}}" 
+        data-item="{{item}}" 
+        bind:goodsItemClick="goodsItemClick" 
+    />
+
+  </block>
+</view>

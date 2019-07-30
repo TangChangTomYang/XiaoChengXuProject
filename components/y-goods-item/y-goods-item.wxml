@@ -1,0 +1,17 @@
+<!--components/y-goods-item/y-goods-item.wxml-->
+
+
+
+<!-- 商品组件 -->
+<view class="goods-item" data-index="{{gIndex}}" data-item="{{item}}" bind:tap="goodsItemClick" >
+  
+  <image src="{{item.show.img}}" mode="widthFix"></image>
+  <view class="des-info">
+    <view class="title">{{item.title}}</view>
+    <view class="info">
+      <text class="price"> ￥{{item.price}}</text>
+      <text class="cfav">{{item.cfav}}</text>
+    </view>
+  </view>
+  
+</view>

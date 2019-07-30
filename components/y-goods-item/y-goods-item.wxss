@@ -1,0 +1,6 @@
+/* components/y-goods-item/y-goods-item.wxss */
+
+
+.goods-item{ 
+  margin: 10rpx;
+}

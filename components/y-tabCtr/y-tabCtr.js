@@ -4,6 +4,15 @@ Component({
    * Component properties
    */
   properties: {
+
+    // 当前选中的条目 序号
+    currtentIndex:{
+      type:String,
+      value :'0',
+      observer: function (newVal, oldVal) {
+
+      }
+    },
     tabCtrs:{
       type:Array,
       value:[],

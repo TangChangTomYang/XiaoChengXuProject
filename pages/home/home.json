@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "y-swiper":"/components/y-swiper/y-swiper" ,
-    "y-tabCtr": "/components/y-tabCtr/y-tabCtr",
+    "y-tabCtr":"/components/y-tabCtr/y-tabCtr",
+    "y-goods-item":"/components/y-goods-item/y-goods-item",
 
 
 

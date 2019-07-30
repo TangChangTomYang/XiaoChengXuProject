@@ -1,2 +1,12 @@
 /* pages/home/home.wxss */
 
+
+
+.goods{
+  display:  flex;
+}
+
+.goods-item{
+  /* flex: 1; */
+  width: 48%;
+}
